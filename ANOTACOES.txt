@@ -1,9 +1,12 @@
                                              **CURSO DE ANGULAR LOIANE TRAINING**
 
- # Componente{} - É a view, ou se já o que o usuário irá ver. Junção da view, controller e escopo.
+ # Componente{} - É a view, ou se já o que o usuário irá ver. Junção do template, controller(comportamento) e escopo.
    Encapsula: 
      - Template: É o código HMTL que será mostrado pro usuário. Exemplo: formulário, datagrid, div,  etc.
      - Metadata: Processamento das classes.
-     - Data Binding: Dado a ser mostrado na tela. É a associação dos dados que nós temos no nosso componente com os componentes que nós temos no template.Um componente consegue conversar com um template mostrando dados através do Data Binding.	
-     - Comportament da VIEW: 	
+     - Data Binding: Dado a ser mostrado na tela. É a associação dos dados que nós temos no nosso componente com os componentes que nós temos no template. Um componente consegue conversar com um template mostrando dados através do Data Binding.	
+     - Comportamento da VIEW: Define como os elementos irão se comportar.
+_________________________________________________________________________________________________________________________________________________________________________
 
+
+*Componente Raiz(Root): Tudo na aplicação é um componente. Temos um componente pai(componente Raiz) que terá tudo que tem na aplicação. Pode ser uma barra de navegação, barra lateral, lista de contatos, lista de clientes, etc. Cada componente pode ter outros componentes dentro do  mesmo.
