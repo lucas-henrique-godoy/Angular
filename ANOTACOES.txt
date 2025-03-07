@@ -8,11 +8,11 @@
      - Comportamento da VIEW: Define como os elementos irão se comportar.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-*COMPONENTE RAIZ(Root): Tudo na aplicação é um componente. Temos um componente pai(componente Raiz) que terá tudo que tem na aplicação. Pode ser uma barra de navegação, barra lateral, lista de contatos, lista de clientes, etc. Cada componente pode ter outros componentes dentro do mesmo.
+* COMPONENTE RAIZ(Root): Tudo na aplicação é um componente. Temos um componente pai(componente Raiz) que terá tudo que tem na aplicação. Pode ser uma barra de navegação, barra lateral, lista de contatos, lista de clientes, etc. Cada componente pode ter outros componentes dentro do mesmo.
 
  - Como o principal objetivo do componente é mostrar dados, podemos fazer integração com o backend com um servidor.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- *SERVIÇO(Service): Como boa prática, não é de bom tom nós escrevermos código de lógica de negócio dentro do nosso componente, para isso nós utilizamos um serviço. E é o serviço que será responsável por ter toda a lógica e também se comunicar com o backend. Além disso,  o serviço(Service) também pode ser injetado em outras classes, e para isso nós utilizamos injeção de dependências do Angular.
+ * SERVIÇO(Service): Como boa prática, não é de bom tom nós escrevermos código de lógica de negócio dentro do nosso componente, para isso nós utilizamos um serviço. E é o serviço que será responsável por ter toda a lógica e também se comunicar com o backend. Além disso,  o serviço(Service) também pode ser injetado em outras classes, e para isso nós utilizamos injeção de dependências do Angular.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * ROUTER: Responsável pela navegação. O Angular trabalha dom SPA(Single Page Application) - Uma página só. Mas mesmo tendo apenas uma página, isso não quer dizer que nós
 não podemos ter telas diferentes. 
