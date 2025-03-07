@@ -1,12 +1,21 @@
                                              **CURSO DE ANGULAR LOIANE TRAINING**
 
- # Componente{} - É a view, ou se já o que o usuário irá ver. Junção do template, controller(comportamento) e escopo.
+ # COMPONENTE{} - É a view, ou se já o que o usuário irá ver. Junção do template, controller(comportamento) e escopo.
    Encapsula: 
      - Template: É o código HMTL que será mostrado pro usuário. Exemplo: formulário, datagrid, div,  etc.
      - Metadata: Processamento das classes.
      - Data Binding: Dado a ser mostrado na tela. É a associação dos dados que nós temos no nosso componente com os componentes que nós temos no template. Um componente consegue conversar com um template mostrando dados através do Data Binding.	
      - Comportamento da VIEW: Define como os elementos irão se comportar.
-_________________________________________________________________________________________________________________________________________________________________________
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+*COMPONENTE RAIZ(Root): Tudo na aplicação é um componente. Temos um componente pai(componente Raiz) que terá tudo que tem na aplicação. Pode ser uma barra de navegação, barra lateral, lista de contatos, lista de clientes, etc. Cada componente pode ter outros componentes dentro do mesmo.
 
-*Componente Raiz(Root): Tudo na aplicação é um componente. Temos um componente pai(componente Raiz) que terá tudo que tem na aplicação. Pode ser uma barra de navegação, barra lateral, lista de contatos, lista de clientes, etc. Cada componente pode ter outros componentes dentro do  mesmo.
+ - Como o principal objetivo do componente é mostrar dados, podemos fazer integração com o backend com um servidor.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ *SERVIÇO(Service): Como boa prática, não é de bom tom nós escrevermos código de lógica de negócio dentro do nosso componente, para isso nós utilizamos um serviço. E é o serviço que será responsável por ter toda a lógica e também se comunicar com o backend. Além disso,  o serviço(Service) também pode ser injetado em outras classes, e para isso nós utilizamos injeção de dependências do Angular.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* ROUTER: Responsável pela navegação. O Angular trabalha dom SPA(Single Page Application) - Uma página só. Mas mesmo tendo apenas uma página, isso não quer dizer que nós
+não podemos ter telas diferentes. 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* DIRETIVA: Responsável por modificar elementos DOM e/ou seu comportamento.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
