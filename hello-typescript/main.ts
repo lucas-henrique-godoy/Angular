@@ -16,3 +16,12 @@ numeros.map(function(valor){
 
 
 numeros.map(valor => valor * 2) //EX 2015
+
+class Matematica {
+    soma(x,y){
+        return x + y;
+    }
+}
+
+var n1 = 'fbtbtb';
+n1 = 4;
