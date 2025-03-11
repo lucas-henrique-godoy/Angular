@@ -19,5 +19,4 @@ não podemos ter telas diferentes.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 * DIRETIVA: Responsável por modificar elementos DOM e/ou seu comportamento.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-*OBS: Sempre que abrir um repositório de um projeto Angular, rodar o comando npm install uma vez para instalar todas as dependências do projeto. Isso vai baixar todos os pacotes listados no package.json, incluindo o @angular/core.
+*OBS: Sempre que abrir um repositório de um projeto Angular, rodar o comando npm install uma vez para instalar todas as dependências do projeto. Isso vai baixar todos os pacotes listados no package.json, incluindo o @angular/core. Se não der certo limpe o cache do npm e rode novamente o comando npm install.
