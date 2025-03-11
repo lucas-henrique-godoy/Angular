@@ -20,3 +20,33 @@ não podemos ter telas diferentes.
 * DIRETIVA: Responsável por modificar elementos DOM e/ou seu comportamento.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 *OBS: Sempre que abrir um repositório de um projeto Angular, rodar o comando npm install uma vez para instalar todas as dependências do projeto. Isso vai baixar todos os pacotes listados no package.json, incluindo o @angular/core. Se não der certo limpe o cache do npm e rode novamente o comando npm install.
+_______________________________________________________________________________________________________________________________________________________________________
+
+**PROBLEMA DE VERSÕES ENCONTRADO: Como estamos utilizando o Angular 15 e seguindo um curso de Angular ocorreu o seguinte problema:
+A principal razão pelos problemas foi a diferença entre o uso de componentes standalone no Angular 15 e as versões anteriores, como o Angular 2. A partir do Angular 14, o conceito de componentes standalone foi introduzido, o que permite que componentes sejam usados fora de módulos (sem a necessidade de estarem dentro de um NgModule). No entanto, para o funcionamento correto dos componentes standalone, você precisa configurar corretamente os módulos e o bootstrap do seu projeto.
+
+Aqui estão os pontos principais:
+
+Componentes Standalone:
+
+Em Angular 15, você pode usar componentes de forma standalone, ou seja, sem a necessidade de adicioná-los a um NgModule.
+Ao definir um componente standalone, você precisa configurar a propriedade standalone: true e usar a opção imports para importar módulos necessários, como CommonModule, em vez de colocá-los dentro de um NgModule.
+Exemplo de como importar um componente standalone:
+typescript
+Copiar
+@Component({
+  selector: 'app-exemplo',
+  standalone: true,
+  imports: [CommonModule],
+  template: '<p>Componente standalone</p>',
+})
+export class ExemploComponent {}
+Configuração do main.ts:
+
+Quando se utiliza componentes standalone no Angular 15, o AppModule pode não ser mais necessário para o bootstrap. Em vez disso, você pode usar a função bootstrapApplication diretamente no main.ts, que é a maneira moderna de inicializar um aplicativo Angular que utiliza componentes standalone.
+Para garantir que tudo funcione corretamente, o AppModule foi substituído por um bootstrap mais direto para componentes standalone.
+Erro de Configuração no AppModule:
+
+O erro que você encontrou relacionado ao bootstrap e a falta de um método ngDoBootstrap foi causado pela configuração incorreta do AppModule, uma vez que estava tentando usar componentes standalone sem a configuração apropriada.
+No Angular 15, você deve usar a função bootstrapApplication() para inicializar o aplicativo corretamente com componentes standalone, como mencionei no código de exemplo.
+Como você está seguindo um curso para versões mais antigas do Angular, muitos desses conceitos podem ser novos para você, pois o Angular evoluiu bastante ao longo do tempo, introduzindo recursos como componentes standalone, e modificando a forma como as aplicações são inicializadas.
