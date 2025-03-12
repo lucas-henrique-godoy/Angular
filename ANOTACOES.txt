@@ -1,0 +1,24 @@
+**CURSO DE ANGULAR**
+Angular é um framework de desenvolvimento para criar aplicações web dinâmicas e interativas. Desenvolvido pelo Google, é baseado em JavaScript (ou TypeScript, que é uma versão tipada do JavaScript) e utiliza o conceito de "componentes" para organizar e estruturar o código.
+
+Algumas das principais características do Angular incluem:
+
+Componentes: São blocos reutilizáveis de código que encapsulam a lógica, a apresentação e o estilo de uma parte da interface do usuário.
+
+Binding de Dados: O Angular permite a ligação bidirecional de dados, ou seja, alterações no modelo de dados são refletidas automaticamente na interface do usuário e vice-versa.
+
+Injeção de Dependência: Uma maneira de organizar e gerenciar dependências entre os serviços e componentes, facilitando o desenvolvimento e manutenção do código.
+
+Roteamento: Possui um sistema de roteamento que permite a navegação entre diferentes partes de uma aplicação de forma eficiente.
+
+CLI (Interface de Linha de Comando): O Angular oferece uma ferramenta poderosa para a criação, desenvolvimento, testes e construção de aplicações diretamente do terminal.
+
+Por ser robusto e escalável, o Angular é frequentemente utilizado em aplicações de grande porte, com requisitos de alta performance e manutenção.
+_________________________________________________________________________________________________________________________________________________________________________
+
+*ESTRUTURA DO ANGULAR: 
+- Vamos entender melhor o que é criado após um ng new;
+- node modules: dependências do projeto;
+- src: onde vamos programar a aplicação;
+- src/app: pasta principal para componentes; 
+- Os componentes são divididos em partes: TS, HTML, CSS, e testes.
