@@ -1,2 +1,2 @@
 # Angular
-Curso de Angular da Loiane Training
+Curso de Angular.
