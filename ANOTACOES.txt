@@ -1,4 +1,5 @@
-**CURSO DE ANGULAR**
+								**CURSO DE ANGULAR**
+
 Angular é um framework de desenvolvimento para criar aplicações web dinâmicas e interativas. Desenvolvido pelo Google, é baseado em JavaScript (ou TypeScript, que é uma versão tipada do JavaScript) e utiliza o conceito de "componentes" para organizar e estruturar o código.
 
 Algumas das principais características do Angular incluem:
@@ -23,3 +24,10 @@ ________________________________________________________________________________
 - src: onde vamos programar a aplicação;
 - src/app: pasta principal para componentes, services e etc; 
 - Os componentes são divididos em partes: TS, HTML, CSS, e testes.
+_______________________________________________________________________________________________________________________________________________________________________
+
+*CRIANDO COMPONENTE:
+- Para criar um componente podemos utilizar o CLI;
+- O comando é: ng generate <nome>
+- Todos os arquivos necessários serão criados no projeto;
+- Para importar o componente basta utilizar o seu selector em um HTML de outro componente;
