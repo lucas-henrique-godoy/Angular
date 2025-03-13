@@ -15,7 +15,7 @@ Roteamento: Possui um sistema de roteamento que permite a navegação entre dife
 CLI (Interface de Linha de Comando): O Angular oferece uma ferramenta poderosa para a criação, desenvolvimento, testes e construção de aplicações diretamente do terminal.
 
 Por ser robusto e escalável, o Angular é frequentemente utilizado em aplicações de grande porte, com requisitos de alta performance e manutenção.
-_________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________
 
 *ESTRUTURA DO ANGULAR: 
 - Vamos entender melhor o que é criado após um ng new;
@@ -28,6 +28,6 @@ ________________________________________________________________________________
 
 *CRIANDO COMPONENTE:
 - Para criar um componente podemos utilizar o CLI;
-- O comando é: ng generate <nome>
+- O comando é: ng generate component <nome>
 - Todos os arquivos necessários serão criados no projeto;
 - Para importar o componente basta utilizar o seu selector em um HTML de outro componente;
