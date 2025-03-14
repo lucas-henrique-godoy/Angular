@@ -24,6 +24,8 @@ ________________________________________________________________________________
 - src: onde vamos programar a aplicação;
 - src/app: pasta principal para componentes, services e etc; 
 - Os componentes são divididos em partes: TS, HTML, CSS, e testes.
+
+#OBS: O app.component é o componente principal.
 _______________________________________________________________________________________________________________________________________________________________________
 
 *CRIANDO COMPONENTE:
@@ -39,3 +41,5 @@ ________________________________________________________________________________
 - Ou seja, estas variáveis são propriedades da classe;
 - E então teremos acesso a estes dados no arquivo .html. o template;
 - A impressão é feita através de:   {{dado}}
+_______________________________________________________________________________________________________________________________________________________________________
+
