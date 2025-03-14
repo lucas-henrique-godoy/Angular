@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-component.component.css']
 })
 export class FirstComponentComponent implements OnInit {
+  //Propriedades/Variáveis que estão sendo mostradas no first-component.html
   name: string = "Lucas";
   age: number = 27;
   job = "Programador";
