@@ -17,7 +17,7 @@ CLI (Interface de Linha de Comando): O Angular oferece uma ferramenta poderosa p
 Por ser robusto e escalável, o Angular é frequentemente utilizado em aplicações de grande porte, com requisitos de alta performance e manutenção.
 _______________________________________________________________________________________________________________________________________________________________________
 
-*ESTRUTURA DO ANGULAR: 
+				*ESTRUTURA DO ANGULAR: 
 - Vamos entender melhor o que é criado após um ng new;
 
 - node modules: dependências do projeto;
@@ -28,14 +28,14 @@ ________________________________________________________________________________
 #OBS: O app.component é o componente principal.
 _______________________________________________________________________________________________________________________________________________________________________
 
-*CRIANDO COMPONENTE:
+				*CRIANDO COMPONENTE:
 - Para criar um componente podemos utilizar o CLI;
 - O comando é: ng generate component <nome>
 - Todos os arquivos necessários serão criados no projeto;
 - Para importar o componente basta utilizar o seu selector em um HTML de outro componente;
 _______________________________________________________________________________________________________________________________________________________________________
 
-*INTERPOLAÇÃO DE DADOS:
+				*INTERPOLAÇÃO DE DADOS:
 - A interpolação de dados é um recurso que vai nos ensinar a trabalhar com os componentes do Angular;
 - Vamos criar nossas variáveis no arquivo .ts, dentro da classe;
 - Ou seja, estas variáveis são propriedades da classe;
@@ -43,13 +43,13 @@ ________________________________________________________________________________
 - A impressão é feita através de:   {{dado}}
 _______________________________________________________________________________________________________________________________________________________________________
 
-*CSS NO ANGULAR:
+				*CSS NO ANGULAR:
 - Os estilos em aplicações de Angular podem ser feitos de duas maneiras;
 - GLOBAL: Utilizando o arquivo styles.css, que fica em src; Muda estilos da aplicação toda(estilos padrões).
-- SCOPED: Estilos a nível de componente, criamos quando damos um generate; Muda stilos que só funcionam em um componente específico não "vazando"  para os outros.
+- SCOPED: Estilos a nível de componente, criamos quando damos um generate; Muda estilos que só funcionam em um componente específico não "vazando"  para os outros.
 _______________________________________________________________________________________________________________________________________________________________________
 
-*COMPARTILHANDO DADOS
+				*COMPARTILHANDO DADOS
 - Em Angular podemos compartilhar dados do componente pai com o componente filho;
 - Para isso vamos disponibilizar na chamada do componente o nome do dado que será recebido com a seguinte sintaxe: [dado];
 - E no código .ts do componente filho vamos  utilizar o decorator @input, que tem como papel entregar o dado para o template.
