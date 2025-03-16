@@ -45,5 +45,5 @@ ________________________________________________________________________________
 
 *CSS NO ANGULAR:
 - Os estilos em aplicações de Angular podem ser feitos de duas maneiras;
-- GLOBAL: Utilizando o arquivo styles.css, que fica em src; Muda estilos da aplicação toda.
-- SCOPED: Estilos a nível de componente, criamos quando damos um generate;
+- GLOBAL: Utilizando o arquivo styles.css, que fica em src; Muda estilos da aplicação toda(estilos padrões).
+- SCOPED: Estilos a nível de componente, criamos quando damos um generate; Muda stilos que só funcionam em um componente específico não "vazando"  para os outros.
