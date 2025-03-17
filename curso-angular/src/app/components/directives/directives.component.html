@@ -1,2 +1,8 @@
 <!--UTILIZANDO DIRETIVAS PARA ADICIONAR ESTILOS INLINE NOS ELEMENTOS-->
 <h2 [ngStyle]="{ 'font-size': size + 'px', 'font-family': font, 'color': color }">Testando diretiva de estilos / style</h2>
+
+
+<!--DIRETIVAS DE CLASSE-->
+<h2 [ngClass]="classes">Testando diretivas de classe 1</h2><!--Diretiva de classe usando Lista-->
+<h2 [ngClass]="classes">Testando diretivas de classe 2</h2><!--Diretiva de classe usando Lista-->
+<h2 [ngClass]="underline">Testando diretivas de classe 3</h2> <!--Diretva de classe única, com apenas uma string.-->
