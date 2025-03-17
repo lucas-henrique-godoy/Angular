@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IfRenderComponent implements OnInit {
   canShow: boolean = true;
-  name: string = 'Lucas';
+  name: string = 'Lucas'; //se mudar o valor entra no else
 
   constructor() { }
 
