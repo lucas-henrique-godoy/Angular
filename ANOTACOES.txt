@@ -66,5 +66,6 @@ ________________________________________________________________________________
 - Utilizamos a diretiva ngIf para isso;
 - Os valores podem ser dinâmicos(propriedades), mas podemos realizar outros tipos de comparação;
 - Há a possibilidade também de imprimir um cenário para validação de falso, com o else;
+_______________________________________________________________________________________________________________________________________________________________________
 
 
