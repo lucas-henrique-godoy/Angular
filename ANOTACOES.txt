@@ -74,3 +74,10 @@ ________________________________________________________________________________
 - A sintaxe é: (click)="algumaFuncao()"
 - Os métodos ficam na classe;
 - Futuramente utilizaremos este recurso para acessar uma API.
+_______________________________________________________________________________________________________________________________________________________________________
+
+				*EMITINDO EVENTOS
+- Podemos comunicar eventos de  um componente filho para o pai;
+-
+-
+-
