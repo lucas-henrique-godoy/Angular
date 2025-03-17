@@ -69,8 +69,8 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________________________________
 
 				*EVENTOS
--
--
--
--
--
+- Podemos ativar eventos nos componentes para disparar algum método;
+- Um evento clássico que utilizamos muito é o click;
+- A sintaxe é: (click)="algumaFuncao()"
+- Os métodos ficam na classe;
+- Futuramente utilizaremos este recurso para acessar uma API.
