@@ -1,5 +1,5 @@
-//É o componente filho-->
-import { Component, OnInit } from '@angular/core';
+//É o componente filho que emite um evento para o componente pai chamado emitter-->
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-change-number',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./change-number.component.css']
 })
 export class ChangeNumberComponent implements OnInit {
+  @Output() changeNumber: EventEmitter<any> = new EventEmitter()
 
   constructor() { }
 
@@ -14,7 +15,7 @@ export class ChangeNumberComponent implements OnInit {
   }
 
   handleClick(){
-    console.log("Mudou o número!");
+    this.changeNumber.emit(); //Emitindo o evento
   }
 
 }
