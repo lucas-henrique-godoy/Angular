@@ -1,21 +1,20 @@
-//É o componente pai
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmitterComponent } from './emitter.component';
+import { ChangeNumberComponent } from './change-number.component';
 
-describe('EmitterComponent', () => {
-  let component: EmitterComponent;
-  let fixture: ComponentFixture<EmitterComponent>;
+describe('ChangeNumberComponent', () => {
+  let component: ChangeNumberComponent;
+  let fixture: ComponentFixture<ChangeNumberComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EmitterComponent ]
+      declarations: [ ChangeNumberComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmitterComponent);
+    fixture = TestBed.createComponent(ChangeNumberComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

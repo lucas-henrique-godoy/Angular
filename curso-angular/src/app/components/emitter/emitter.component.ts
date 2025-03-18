@@ -1,4 +1,4 @@
-//Possui o evento sendo emitido  do componente filho
+//É o componente pai, possui o evento sendo emitido  do componente filho
 import { Component, OnInit } from '@angular/core';
 
 @Component({
