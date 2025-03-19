@@ -90,3 +90,10 @@ ________________________________________________________________________________
 - A sinaxe é: *ngFor="let item of items"
 - Dessa maneira podemos renderizar template baseado em dados;
 _______________________________________________________________________________________________________________________________________________________________________
+
+				*IMPORTÂNCIA DAS INTERFACES
+- Toda entidade que vamos trabalhar precisa de uma interface;
+- Isso vai tornar nosso código mais simples ao longo do programa;
+- Padronizando ele e facilitando a manutenção;
+- Vamos implementar uma interface a nossa lista de animais;
+- E fazer um evento que também utilizará este recurso;
