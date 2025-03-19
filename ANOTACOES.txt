@@ -89,3 +89,4 @@ ________________________________________________________________________________
 - E no template do componente vamos utilizar o *ngFor;
 - A sinaxe é: *ngFor="let item of items"
 - Dessa maneira podemos renderizar template baseado em dados;
+_______________________________________________________________________________________________________________________________________________________________________
