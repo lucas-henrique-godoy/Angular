@@ -82,3 +82,10 @@ ________________________________________________________________________________
 - Na tag de invocação do componente no template, escolhemos um método para executar quando o evento for emitido;
 - Exemplo: (emit)="onEmit()"
 _______________________________________________________________________________________________________________________________________________________________________
+
+				*RENDERIZAÇÃO DE LISTAS
+- Outro recurso importante é o loop em listas;
+- Para isso vamos precisar de uma propriedade com os itens da lista;
+- E no template do componente vamos utilizar o *ngFor;
+- A sinaxe é: *ngFor="let item of items"
+- Dessa maneira podemos renderizar template baseado em dados;
