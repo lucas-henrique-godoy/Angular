@@ -104,3 +104,4 @@ ________________________________________________________________________________
 - Podemos realizar diversas funções, como deixar o texto em caixa alta;
 - A sintaxe é: {{ dado | algumPipeOperator }}
 - Desta maneira nos poupamos de regras de CSS ou manipulação de strings com JS;
+_______________________________________________________________________________________________________________________________________________________________________
