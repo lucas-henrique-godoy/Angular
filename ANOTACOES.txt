@@ -105,3 +105,9 @@ ________________________________________________________________________________
 - A sintaxe é: {{ dado | algumPipeOperator }}
 - Desta maneira nos poupamos de regras de CSS ou manipulação de strings com JS;
 _______________________________________________________________________________________________________________________________________________________________________
+
+				*TWO WAY DATA BINDING
+- O Two way data binding é um recurso muito interessante para trabalho com formulários;
+- Basicamente conseguimos alterar props e o template com o preenchimento de inputs;
+- É necessário importar o FormsModule no componente principal;
+- E também declarar o ngModel no input, além de preencher também o atributo name, todos com o mesmo valor;
