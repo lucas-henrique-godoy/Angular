@@ -1,3 +1,4 @@
+import { isNull } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./two-way-binding.component.css']
 })
 export class TwoWayBindingComponent implements OnInit {
+  name:string = '';
+  age: any;
 
   constructor() { }
 
