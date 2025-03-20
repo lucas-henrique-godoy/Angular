@@ -113,4 +113,9 @@ ________________________________________________________________________________
 - E também declarar o ngModel no input, além de preencher também o atributo name, todos com o mesmo valor;
 _______________________________________________________________________________________________________________________________________________________________________
 
-				*
+				*SERVICE
+- O Service é outra parte fundamental da arquitetura do Angular;
+- Geralmente ficam as requisições para as APIs que utilizamos no projeto;
+- Precisamos criar o servisse com: ng generate servisse <nome>
+- Importar no componente e iniciar no construtor;
+- Depois é possível acessar os métodos dele;
