@@ -119,3 +119,6 @@ ________________________________________________________________________________
 - Precisamos criar o servisse com: ng generate servisse <nome>
 - Importar no componente e iniciar no construtor;
 - Depois é possível acessar os métodos dele;
+_______________________________________________________________________________________________________________________________________________________________________
+
+				*
