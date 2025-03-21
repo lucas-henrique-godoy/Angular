@@ -132,6 +132,13 @@ ________________________________________________________________________________
 4-Utilizar os Métodos do Serviço no Componente: No componente, utilize os métodos do serviço conforme necessário, como para realizar uma operação de remoção, adição, busca ou qualquer outra lógica definida no serviço.
 
 5-Chamar os Métodos do Serviço a Partir da Interface (HTML): No template HTML, crie eventos (como cliques de botão) que chamam os métodos do componente, que por sua vez chamam os métodos do serviço para manipular ou atualizar os dados.
-Esse é o fluxo básico para criar e utilizar um serviço no Angular._______________________________________________________________________________________________________________________________________________________________________
+Esse é o fluxo básico para criar e utilizar um serviço no Angular.
+_______________________________________________________________________________________________________________________________________________________________________
 
-				*
+				*ANGULAR ROUTER
+- Nós vamos criar um novo arquivo para declarar nossas rotas
+- Nele vamos importar os módulos RouterModule e Routes
+- Após a definição estas rotas precisam ser importadas em app.module.ts
+- E por fim no template principal criamos as rotas
+- E substituímos os componentes por: <router-outlet>
+_______________________________________________________________________________________________________________________________________________________________________
