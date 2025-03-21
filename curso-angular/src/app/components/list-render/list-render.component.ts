@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Animal } from 'src/app/Animal';
+import { Animal } from 'src/app/Animal'; //Importando a interface Animal
 
 import { ListService } from 'src/app/services/list.service'; //Importando Service List
 
@@ -37,7 +37,7 @@ export class ListRenderComponent implements OnInit {
   }
 
   removeAnimal(animal: Animal){
-    console.log("Removendo animal...")  
-    this.animals = this.listService.remove(this.animals, animal);  
+    console.log("Removendo animal...")   // Exibe uma mensagem no console para indicar a remoção
+    this.animals = this.listService.remove(this.animals, animal); // Chama o método 'remove' do service
   }
 }
