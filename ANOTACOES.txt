@@ -119,6 +119,18 @@ ________________________________________________________________________________
 - Precisamos criar o servisse com: ng generate servisse <nome>
 - Importar no componente e iniciar no construtor;
 - Depois é possível acessar os métodos dele;
-_______________________________________________________________________________________________________________________________________________________________________
+
+
+* Passo a Passo Lógico para Criar e Utilizar um Service no Angular:
+1- Criar o Serviço: Crie um novo serviço, que pode conter a lógica de manipulação de dados ou funcionalidades que você deseja compartilhar entre vários componentes.
+
+2-Adicionar Métodos ao Serviço: Dentro do serviço, defina os métodos que vão realizar as operações ou manipulação de dados (como adicionar, remover, buscar, etc.).
+
+3-Importar e Injetar o Serviço no Componente: No componente onde você deseja usar o serviço, importe o serviço e injete-o no construtor do componente. Isso permite que o componente tenha acesso aos métodos definidos no serviço.
+
+4-Utilizar os Métodos do Serviço no Componente: No componente, utilize os métodos do serviço conforme necessário, como para realizar uma operação de remoção, adição, busca ou qualquer outra lógica definida no serviço.
+
+5-Chamar os Métodos do Serviço a Partir da Interface (HTML): No template HTML, crie eventos (como cliques de botão) que chamam os métodos do componente, que por sua vez chamam os métodos do serviço para manipular ou atualizar os dados.
+Esse é o fluxo básico para criar e utilizar um serviço no Angular._______________________________________________________________________________________________________________________________________________________________________
 
 				*
