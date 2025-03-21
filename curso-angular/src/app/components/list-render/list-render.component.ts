@@ -17,6 +17,7 @@ export class ListRenderComponent implements OnInit {
     {name: "Bob", type: "Horse", age: 1},
   ];
 
+  //NÃO ESTA SENDO USADO
   animal: Animal ={
     name: 'Teste',
     type: 'Alguma coisa',
