@@ -18,11 +18,11 @@ export class ListRenderComponent implements OnInit {
   ];
 
   //NÃO ESTA SENDO USADO
-  animal: Animal ={
-    name: 'Teste',
-    type: 'Alguma coisa',
-    age: 10,
-  };
+  // animal: Animal ={
+  //   name: 'Teste',
+  //   type: 'Alguma coisa',
+  //   age: 10,
+  // };
    
   animalDetails = '';
 
@@ -39,5 +39,4 @@ export class ListRenderComponent implements OnInit {
     console.log("Removendo animal...")  
     this.animals = this.listService.remove(this.animals, animal);  
   }
-
 }
