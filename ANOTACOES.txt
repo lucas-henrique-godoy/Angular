@@ -120,6 +120,7 @@ ________________________________________________________________________________
 - Importar no componente e iniciar no construtor;
 - Depois é possível acessar os métodos dele;
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 * Passo a Passo Lógico para Criar e Utilizar um Service no Angular:
 1- Criar o Serviço: Crie um novo serviço, que pode conter a lógica de manipulação de dados ou funcionalidades que você deseja compartilhar entre vários componentes.
