@@ -1,16 +1,25 @@
+<p>header</p>
 <h1>Hello, World Angular!</h1>
-<h2>Testando H2</h2> <!--Esse H2 não é estilizado, pois cada componente possui sua própria estrutura separada-->
+<nav>
+    <a routerLink="/">Home</a> <!--Link com as Rotas-->
+    <a routerLink="/list">Lista</a> <!--Link com as Rotas-->
+</nav>
+
+<!-- <h2>Testando H2</h2>   //Esse H2 não é estilizado, pois cada componente possui sua própria estrutura separada
 <p>Alguma coisa</p>
 <div>
     <a href="#">Clique Aqui!</a>
 </div>
-<app-first-component></app-first-component> <!--Importando o first-component no app.componenet para ser visializado no navegador-->
+<app-first-component></app-first-component>   //Importando o first-component no app.componenet para ser visializado no navegador
 <app-parent-data [name]="userName" [userData]="userData"></app-parent-data>
 <app-directives></app-directives>
 <app-if-render></app-if-render>
 <app-eventos></app-eventos>
-<app-emitter></app-emitter> <!--Componente Pai-->
+<app-emitter></app-emitter>   //Componente Pai
 <app-list-render></app-list-render>
 <app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<app-two-way-binding></app-two-way-binding> -->
 
+<!--Utilzando rotas no angular-->
+<router-outlet></router-outlet>
+<p>footer</p>
