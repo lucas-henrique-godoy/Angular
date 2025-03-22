@@ -114,11 +114,11 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________________________________
 
 				*SERVICE
-- O Service é outra parte fundamental da arquitetura do Angular;
-- Geralmente ficam as requisições para as APIs que utilizamos no projeto;
+- O Service é outra parte fundamental da arquitetura do Angular
+- Geralmente ficam as requisições para as APIs que utilizamos no projeto
 - Precisamos criar o servisse com: ng generate servisse <nome>
-- Importar no componente e iniciar no construtor;
-- Depois é possível acessar os métodos dele;
+- Importar no componente e iniciar no construtor
+- Depois é possível acessar os métodos dele
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
