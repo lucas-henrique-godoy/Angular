@@ -2,3 +2,10 @@ p{
     color: red;
     padding: 15px;
 }
+
+/*Estiliando os links das rotas para ficarem um sobre o outro*/
+a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
