@@ -147,5 +147,5 @@ ________________________________________________________________________________
 
 - Vamos realizar requisições HTTP nos nossos services
 - Precisamos importar dois pacotes: HttpClient e HttpHeaders
-- Neste exemplo utilizaremos uma API local para simular as request
+- Neste exemplo utilizaremos uma API local para simular as request, com o json-server
 -
