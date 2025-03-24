@@ -142,3 +142,10 @@ ________________________________________________________________________________
 - E por fim no template principal criamos as rotas
 - E substituímos os componentes por: <router-outlet>
 _______________________________________________________________________________________________________________________________________________________________________
+
+				*REQUISIÇÕES TTP
+
+- Vamos realizar requisições HTTP nos nossos services
+- Precisamos importar dois pacotes: HttpClient e HttpHeaders
+- Neste exemplo utilizaremos uma API local para simular as request
+-
