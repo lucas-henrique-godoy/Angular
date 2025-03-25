@@ -1,0 +1,14 @@
+Cadastro de pessoas
+- Nome
+- CPF
+- Data de nascimento
+- participa da fidelidade
+- saldo em conta
+- Telefone
+
+Endereço
+- CEP 
+- rua
+- bairro
+- cidade
+- estado
