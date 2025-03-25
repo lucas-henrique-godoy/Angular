@@ -1,0 +1,4 @@
+				** COMO UTILIZAR (SERVIÇOS) SERVICES E LOCALSTORAGE PARA SALVAR OS DADOS DO FORMULÁRIO COM ANGULAR **
+
+Services são classes que realizam funções de Negócio, para atender determinada necessidade da aplicação. Existem serviços específicos, orientados a módulos específicos da aplicação, 
+e existem módulos comuns, ou compartilhados, que podem ser utilizados por toda a aplicação. Para criar um serviço, na raiz do projeto, digite ng generate service clientes/service/Cliente

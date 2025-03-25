@@ -1,27 +1,21 @@
 <h1>Cadastro de Pessoas</h1>
 
-<form [formGroup]= "formPessoa">
+<form [formGroup]="formPessoa">
   <legend>Dados Pessoais</legend>
   <input placeholder="Nome" formControlName="nome">
   <input placeholder="CPF" formControlName="cpf">
 
-  <div><label >Data de Nascimento:</label></div>
-  <mat-form-field>
-    <input placeholder="Data de Nascimento" formControlName="dataNascimento" matInput [matDatepicker]="dataNacimento">
-    <mat-datepicker-toggle [for]="dataNacimento"></mat-datepicker-toggle>
-    <mat-datepicker #dataNacimento></mat-datepicker>
-  </mat-form-field>
-
+  <div><label>Data de Nascimento:</label></div>
+  <input type="date" formControlName="dataNascimento">
 
   <div>
-    <label >Participa da Fidelidade?</label>
+    <label>Participa da Fidelidade?</label>
     <input placeholder="Sim ou Não" formControlName="participaFidelidade">
   </div>
 
-
   <div>
-    <label >Saldo em Conta:</label>
-    <input placeholder="Saldo em Conta" formControlName="saldoConta">
+    <label>Saldo em Conta:</label>
+    <input placeholder="Saldo em Conta" formControlName="saldoConta" type="number">
   </div>
 
   <input placeholder="Telefone" formControlName="telefone">
@@ -33,10 +27,16 @@
   <input placeholder="Cidade" formControlName="cidade">
   <input placeholder="Estado" formControlName="estado">
 
-
-  <button>Cadastrar</button>
-  <button>Editar</button>
-  <button>Excluir</button>
-  <button>Pesquisar</button>
+  <button (click)="cadastrar()" type="button">{{ isEditing ? 'Atualizar' : 'Cadastrar' }}</button>
+  <button (click)="excluir()" type="button">Excluir</button>
+  <button (click)="pesquisar()" type="button">Pesquisar</button>
 </form>
 
+<h2>Lista de Pessoas Cadastradas</h2>
+<ul>
+  <li *ngFor="let pessoa of pessoas">
+    {{ pessoa.nome }} - {{ pessoa.cpf }}
+    <button (click)="formPessoa.patchValue(pessoa); isEditing = true; cpfParaEditar = pessoa.cpf;">Editar</button>
+    <button (click)="pessoaService.excluir(pessoa.cpf); carregarPessoas();">Excluir</button>
+  </li>
+</ul>
