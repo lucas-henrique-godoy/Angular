@@ -5,6 +5,7 @@
   <input placeholder="Nome" formControlName="nome">
   <input placeholder="CPF" formControlName="cpf">
 
+  <div><label >Data de Nascimento:</label></div>
   <mat-form-field>
     <input placeholder="Data de Nascimento" formControlName="dataNascimento" matInput [matDatepicker]="dataNacimento">
     <mat-datepicker-toggle [for]="dataNacimento"></mat-datepicker-toggle>
@@ -12,9 +13,17 @@
   </mat-form-field>
 
 
-  <input id="participaFidelidade" placeholder="Participa da Fidelidade?" formControlName="participaFidelidade">
+  <div>
+    <label >Participa da Fidelidade?</label>
+    <input placeholder="Sim ou Não" formControlName="participaFidelidade">
+  </div>
 
-  <input placeholder="Saldo em Conta" formControlName="saldoConta">
+
+  <div>
+    <label >Saldo em Conta:</label>
+    <input placeholder="Saldo em Conta" formControlName="saldoConta">
+  </div>
+
   <input placeholder="Telefone" formControlName="telefone">
 
   <legend>Endereço</legend>
