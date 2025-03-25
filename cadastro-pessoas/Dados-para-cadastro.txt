@@ -1,14 +1,27 @@
-Cadastro de pessoas
+ pessoas
 - Nome
 - CPF
 - Data de nascimento
 - participa da fidelidade
 - saldo em conta
-- Telefone
 
-Endereço
+- Telefone - tabela separada 1 pessoa pode ter muitos telefones
+
+Endereço - tabela separada
 - CEP 
 - rua
 - bairro
-- cidade
+- cidade - ja esta criada
 - estado
+
+o script que eu gerar deve ser colocado no token.
+
+JA CRIEI:
+CREATE TABLE Pessoas (
+    ID INT IDENTITY(1,1) PRIMARY KEY,  -- Identificador único
+    Nome NVARCHAR(100) NOT NULL,
+    CPF CHAR(11) NOT NULL UNIQUE,  -- CPF deve ser único
+    DataNascimento DATE NOT NULL,
+    ParticipaFidelidade BIT NOT NULL DEFAULT 0,  -- 0 = Não, 1 = Sim
+    SaldoConta DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+);
