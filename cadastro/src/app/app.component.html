@@ -1,0 +1,74 @@
+<!-- Título do formulário -->
+<h1>Cadastro</h1>
+
+<!-- Formulário de cadastro -->
+<!-- O evento (ngSubmit)="salvar()" faz com que o método salvar() seja chamado ao enviar o formulário -->
+<form (ngSubmit)="salvar()">
+
+  <!-- Campo de entrada para o nome -->
+  <input type="text" placeholder="Nome" [(ngModel)]="pessoa.nome" name="nome" required />
+
+  <!-- Campo de entrada para o CPF -->
+  <input type="text" placeholder="CPF" [(ngModel)]="pessoa.cpf" name="cpf" required />
+
+  <!-- Campo de entrada para a data de nascimento -->
+  <input type="date" [(ngModel)]="pessoa.dataNascimento" name="dataNascimento" required />
+
+  <!-- Checkbox para indicar participação no programa de fidelidade -->
+  <label>
+    <input type="checkbox" [(ngModel)]="pessoa.fidelidade" name="fidelidade" />
+    Participa da Fidelidade
+  </label>
+
+  <!-- Campo de entrada para o saldo -->
+  <input type="number" placeholder="Saldo" [(ngModel)]="pessoa.saldo" name="saldo" required />
+
+  <!-- Campo de entrada para o telefone -->
+  <input type="tel" placeholder="Telefone" [(ngModel)]="pessoa.telefone" name="telefone" required />
+
+  <!-- Seção de endereço -->
+  <h3>Endereço</h3>
+
+  <!-- Campo de entrada para o CEP -->
+  <input type="text" placeholder="CEP" [(ngModel)]="pessoa.endereco.cep" name="cep" required />
+
+  <!-- Campo de entrada para a rua -->
+  <input type="text" placeholder="Rua" [(ngModel)]="pessoa.endereco.rua" name="rua" required />
+
+  <!-- Campo de entrada para o bairro -->
+  <input type="text" placeholder="Bairro" [(ngModel)]="pessoa.endereco.bairro" name="bairro" required />
+
+  <!-- Campo de entrada para a cidade -->
+  <input type="text" placeholder="Cidade" [(ngModel)]="pessoa.endereco.cidade" name="cidade" required />
+
+  <!-- Campo de entrada para o estado -->
+  <input type="text" placeholder="Estado" [(ngModel)]="pessoa.endereco.estado" name="estado" required />
+
+  <!-- Botão de envio do formulário -->
+  <!-- O texto do botão muda dinamicamente entre "Atualizar" e "Salvar" dependendo da variável 'editando' -->
+  <button type="submit">{{ editando ? 'Atualizar' : 'Salvar' }}</button>
+</form>
+
+<!-- Título da lista de cadastros -->
+<h2>Lista de Pessoas</h2>
+
+<!-- Lista de pessoas cadastradas -->
+<ul>
+  <!-- Diretiva *ngFor percorre a lista de cadastros e exibe cada item -->
+  <li *ngFor="let item of lista; let i = index">
+
+    <!-- Exibição do nome e CPF da pessoa cadastrada -->
+    <strong>{{ item.nome }}</strong> - CPF: {{ item.cpf }}
+    <br />
+
+    <!-- Exibição do endereço -->
+    📍 {{ item.endereco.rua }}, {{ item.endereco.cidade }}/{{ item.endereco.estado }}
+    <br />
+
+    <!-- Botão para editar o cadastro -->
+    <button (click)="editar(i)">✏️ Editar</button>
+
+    <!-- Botão para excluir o cadastro -->
+    <button (click)="excluir(i)">🗑️ Excluir</button>
+  </li>
+</ul>
