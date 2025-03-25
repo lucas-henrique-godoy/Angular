@@ -2,19 +2,25 @@
 
 <form [formGroup]= "formPessoa">
   <legend>Dados Pessoais</legend>
-  <input placeholder="Nome">
-  <input placeholder="CPF">
-  <input placeholder="Data de Nascimento">
-  <input placeholder="Participa da Fidelidade?">
-  <input placeholder="Saldo em Conta">
-  <input placeholder="Telefone">
+  <input placeholder="Nome" formControlName="nome">
+  <input placeholder="CPF" formControlName="cpf">
+
+  <mat-form-field>
+    <input placeholder="Data de Nascimento" formControlName="dataNascimento">
+    <mat-datepicker-toggle [for]="dataNacimento"></mat-datepicker-toggle>
+    <mat-datepicker #dataNacimento></mat-datepicker>
+  </mat-form-field>
+
+  <input placeholder="Participa da Fidelidade?" formControlName="participaFidelidade">
+  <input placeholder="Saldo em Conta" formControlName="saldoConta">
+  <input placeholder="Telefone" formControlName="telefone">
 
   <legend>Endereço</legend>
-  <input placeholder="CEP">
-  <input placeholder="Rua">
-  <input placeholder="Bairro">
-  <input placeholder="Cidade">
-  <input placeholder="Estado">
+  <input placeholder="CEP" formControlName="cep">
+  <input placeholder="Rua" formControlName="rua">
+  <input placeholder="Bairro" formControlName="bairro">
+  <input placeholder="Cidade" formControlName="cidade">
+  <input placeholder="Estado" formControlName="estado">
 
 
   <button>Criar</button>
@@ -22,3 +28,4 @@
   <button>Excluir</button>
   <button>Pesquisar</button>
 </form>
+
