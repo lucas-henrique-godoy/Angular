@@ -36,7 +36,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
