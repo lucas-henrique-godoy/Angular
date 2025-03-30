@@ -28,8 +28,7 @@ export class ListRenderComponent implements OnInit {
 
   constructor(private listService: ListService) { } //Inicializando e injetando  o service no componente
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   
   showAge(animal: Animal) {
