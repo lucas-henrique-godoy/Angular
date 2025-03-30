@@ -10,23 +10,19 @@ import { ListService } from 'src/app/services/list.service'; //Importando Servic
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent implements OnInit {
-  animals: Animal[] = [
-    {name: "Turca", type: "Dog", age: 4},
-    {name: "Tom", type: "Cat", age: 10},
-    {name:"Frida", type: "Dog", age: 5},
-    {name: "Bob", type: "Horse", age: 1},
-  ];
-
-  //NÃO ESTA SENDO USADO
-  // animal: Animal ={
-  //   name: 'Teste',
-  //   type: 'Alguma coisa',
-  //   age: 10,
-  // };
+  animals: Animal[] = [];
+  
+  animal: Animal ={
+    name: 'Teste',
+    type: 'Alguma coisa',
+    age: 10,
+  };
    
   animalDetails = '';
 
-  constructor(private listService: ListService) { } //Inicializando e injetando  o service no componente
+  constructor(private listService: ListService) { //Inicializando e injetando  o service no componente
+    this.getAnimals()
+  } 
 
   ngOnInit(): void { }
 
@@ -38,5 +34,9 @@ export class ListRenderComponent implements OnInit {
   removeAnimal(animal: Animal){
     console.log("Removendo animal...")   // Exibe uma mensagem no console para indicar a remoção
     this.animals = this.listService.remove(this.animals, animal); // Chama o método 'remove' do service
+  }
+
+  getAnimals(): void{
+    this.listService.getAll()
   }
 }
