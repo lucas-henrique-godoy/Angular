@@ -20,5 +20,6 @@ export class ItemDetailComponent implements OnInit {
 
     getAnimal(){ //Acessando o service pegando os dados do  "banco": db.json
       const id = Number(this.route.snapshot.paramMap.get("id"));
+      this.listService.getItem(id).subscribe((animal) => (this.animal = animal));
     }
 }

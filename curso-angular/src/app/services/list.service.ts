@@ -5,6 +5,7 @@ import { Animal } from '../Animal'; // Importando a interface Animal
 
 import { Observable } from 'rxjs'; // Importa a classe Observable da biblioteca RxJS, que é usada para trabalhar com fluxos de dados assíncronos
 import { HttpClient } from '@angular/common/http';
+import { NumberFormatStyle } from '@angular/common';
 
 
 @Injectable({
@@ -22,5 +23,9 @@ export class ListService {
 
   getAll(): Observable<Animal[]> {
     return this.http.get<Animal[]>(this.apiUrl);
+  }
+
+  getItem(id: number): Observable<Animal>{
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`)
   }
 }
