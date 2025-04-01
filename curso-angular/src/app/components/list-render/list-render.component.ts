@@ -12,11 +12,7 @@ import { ListService } from 'src/app/services/list.service'; //Importando Servic
 export class ListRenderComponent implements OnInit {
   animals: Animal[] = [];
   
-  animal: Animal ={
-    name: 'Teste',
-    type: 'Alguma coisa',
-    age: 10,
-  };
+  
    
   animalDetails = '';
 

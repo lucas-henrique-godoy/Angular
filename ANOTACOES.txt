@@ -150,9 +150,9 @@ ________________________________________________________________________________
 - Por último, é necessário inicializar o módulo HttpClientModule em app.module.ts
 _______________________________________________________________________________________________________________________________________________________________________
 
-				*CARREGANDO DADO INDIVIDUAL
+				*CARREGANDO DADO INDIVIDUAL - DYNAMIC ROUTES(Selecionando dado individual)
 - Para resgatar um dado do banco vamos precisar criar uma rota dinâmica no nosso router.
 - Baseado no id do item teremos a seleção de dado no banco, geralmente o id vem pela URL.
-- Para resgatar parâmetros da URL vamos utilizar o ActivatedRuted, um módulo de Angular.
+- Para resgatar parâmetros da URL vamos utilizar o ActivatedRute, um módulo de Angular.
 - A lógica para requisição HTTP ficará no service.
 _______________________________________________________________________________________________________________________________________________________________________
