@@ -149,3 +149,9 @@ ________________________________________________________________________________
 - Neste exemplo utilizaremos uma API local para simular as request, com o json-server(é um pacote npm que você pode usar para criar um webservice REST JSON simulando uma API).
 - Por último, é necessário inicializar o módulo HttpClientModule em app.module.ts
 _______________________________________________________________________________________________________________________________________________________________________
+
+				*CARREGANDO DADO INDIVIDUAL
+-
+-
+-
+-
