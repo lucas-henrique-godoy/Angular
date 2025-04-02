@@ -162,3 +162,4 @@ ________________________________________________________________________________
 - Criaremos outro método no service.
 - E ajustaremos a maneira que o método da classe do componente é executado.
 - Com simples mudanças estaremos interagindo com a API.
+_______________________________________________________________________________________________________________________________________________________________________
