@@ -17,8 +17,8 @@ export class ListService {
 
   constructor(private http: HttpClient) { }
 
-  remove(animals: Animal[], animal:Animal){
-    return;  // Filtra e retorna ao método no component,  os animais que não têm o mesmo nome do animal a ser removido 
+  remove(id: number){
+    return this.http.delete<Animal>(`${this.apiUrl}/${id}`);  // Filtra e retorna ao método no component,  os animais que não têm o mesmo nome do animal a ser removido 
   }
 
   getAll(): Observable<Animal[]> {
