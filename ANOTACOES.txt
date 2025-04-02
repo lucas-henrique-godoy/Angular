@@ -159,6 +159,6 @@ ________________________________________________________________________________
 
 				*DELETANDO REGISTRO
 - Agora vamos refatorar nossas ação de remover registro com a execução HTTP.
-- Criaremos outro método no servisse.
--
--
+- Criaremos outro método no service.
+- E ajustaremos a maneira que o método da classe do componente é executado.
+- Com simples mudanças estaremos interagindo com a API.
