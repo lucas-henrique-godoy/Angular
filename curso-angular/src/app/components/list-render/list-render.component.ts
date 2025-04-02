@@ -28,8 +28,8 @@ export class ListRenderComponent implements OnInit {
   }
 
   removeAnimal(animal: Animal){
-    console.log("Removendo animal...")   // Exibe uma mensagem no console para indicar a remoção
-    this.animals = this.listService.remove(this.animals, animal); // Chama o método 'remove' do service
+    this.animals.filter((a) => animal.name !== a.name)
+    this.listService.remove(this.animals, animal); // Chama o método 'remove' do service
   }
 
   getAnimals(): void{
