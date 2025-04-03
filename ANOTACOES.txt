@@ -163,3 +163,5 @@ ________________________________________________________________________________
 - E ajustaremos a maneira que o método da classe do componente é executado.
 - Com simples mudanças estaremos interagindo com a API.
 _______________________________________________________________________________________________________________________________________________________________________
+
+				*PROJETO FULLSTACK ANGULAR COM  API RESTFUL COM ADONISJS
