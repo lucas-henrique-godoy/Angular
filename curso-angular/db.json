@@ -7,16 +7,58 @@
       "age": 4
     },
     {
+      "id": "2",
+      "name": "Mia",
+      "type": "Cat",
+      "age": 3
+    },
+    {
       "id": "3",
       "name": "Frida",
       "type": "Dog",
       "age": 4
     },
     {
+      "id": "4",
+      "name": "Nemo",
+      "type": "Fish",
+      "age": 2
+    },
+    {
       "id": "5",
       "name": "Paco",
       "type": "Bird",
       "age": 4
+    },
+    {
+      "id": "6",
+      "name": "Luna",
+      "type": "Rabbit",
+      "age": 2
+    },
+    {
+      "id": "7",
+      "name": "Rex",
+      "type": "Dog",
+      "age": 5
+    },
+    {
+      "id": "8",
+      "name": "Cleo",
+      "type": "Cat",
+      "age": 6
+    },
+    {
+      "id": "9",
+      "name": "Rio",
+      "type": "Parrot",
+      "age": 3
+    },
+    {
+      "id": "10",
+      "name": "Spike",
+      "type": "Turtle",
+      "age": 10
     }
   ]
 }
