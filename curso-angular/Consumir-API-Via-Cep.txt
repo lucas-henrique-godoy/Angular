@@ -1,0 +1,135 @@
+1. Configurar o Serviço para a API do ViaCEP
+Vamos criar um serviço que vai buscar os dados de endereço usando o CEP.
+
+No terminal, digite:
+
+bash
+Copiar
+Editar
+ng generate service services/cep
+Isso cria o arquivo cep.service.ts.
+
+Agora, abra esse arquivo e adicione o seguinte código:
+
+ts
+Copiar
+Editar
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CepService {
+
+  private apiUrl = 'https://viacep.com.br/ws'; // URL da API ViaCEP
+
+  constructor(private http: HttpClient) { }
+
+  // Método para buscar o endereço pelo CEP
+  getEndereco(cep: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${cep}/json/`);
+  }
+}
+2. Usar o Serviço no Componente
+Agora que temos o serviço, vamos usá-lo no componente onde você deseja exibir os dados de endereço. Para isso, abra o arquivo app.component.ts e edite como abaixo:
+
+ts
+Copiar
+Editar
+import { Component } from '@angular/core';
+import { CepService } from './services/cep.service';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+})
+export class AppComponent {
+  cep: string = '';        // Variável para armazenar o CEP digitado
+  endereco: any = null;    // Variável para armazenar os dados do endereço
+
+  constructor(private cepService: CepService) {}
+
+  buscarEndereco() {
+    if (this.cep.length === 8) { // Verifica se o CEP tem 8 caracteres
+      this.cepService.getEndereco(this.cep).subscribe(
+        (dados) => {
+          this.endereco = dados; // Recebe os dados do endereço
+        },
+        (error) => {
+          console.error('Erro ao buscar endereço:', error);
+        }
+      );
+    } else {
+      alert('Digite um CEP válido com 8 dígitos.');
+    }
+  }
+}
+3. Criar o Template para Exibir os Dados
+Agora, abra o arquivo app.component.html e adicione o seguinte para exibir o campo de CEP, o botão de busca e os resultados:
+
+html
+Copiar
+Editar
+<div>
+  <h1>Busca de Endereço - ViaCEP</h1>
+
+  <label for="cep">Digite o CEP:</label>
+  <input type="text" id="cep" [(ngModel)]="cep" placeholder="Ex: 01001000">
+  <button (click)="buscarEndereco()">Buscar</button>
+
+  <div *ngIf="endereco">
+    <h2>Resultado:</h2>
+    <p><strong>CEP:</strong> {{ endereco.cep }}</p>
+    <p><strong>Logradouro:</strong> {{ endereco.logradouro }}</p>
+    <p><strong>Bairro:</strong> {{ endereco.bairro }}</p>
+    <p><strong>Cidade:</strong> {{ endereco.localidade }}</p>
+    <p><strong>Estado:</strong> {{ endereco.uf }}</p>
+  </div>
+
+  <div *ngIf="!endereco && cep.length === 8">
+    <p>Não foi possível encontrar o endereço. Verifique o CEP.</p>
+  </div>
+</div>
+4. Importar FormsModule
+O ngModel no template precisa que você importe o FormsModule no seu módulo. Abra o arquivo app.module.ts e adicione o seguinte:
+
+ts
+Copiar
+Editar
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';  // Adicione esta linha
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule  // E essa aqui
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+5. Testar no Navegador
+Agora, no terminal, execute:
+
+bash
+Copiar
+Editar
+ng serve
+E no seu navegador, vá até http://localhost:4200. Você verá um campo para digitar o CEP e, ao buscar, o endereço será exibido.
+
+✨ Funcionalidades extras
+Se quiser, você pode melhorar isso com mais funcionalidades, como:
+
+Validação do CEP: garantir que o usuário digitou um CEP válido.
+
+Autocompletar: sugerir automaticamente as cidades enquanto o usuário digita (precisa de uma API de cidades).
+
+Carregando: adicionar uma mensagem de "Carregando..." enquanto a requisição está em andamento.
+
