@@ -1,2 +1,2 @@
 # Angular
-Curso de Angular-Matheus Battisti
+Curso de Angular-Matheus Battisti.
